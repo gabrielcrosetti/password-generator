@@ -3,7 +3,7 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  var password = generate();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
@@ -24,7 +24,8 @@ var lowerCaseConf
 var upperCaseConf
 var lengthConf
 
-function generate() { lengthConf = prompt( "Please type out the desired length of your password. Must between 8-128 characters.")
+function generate() {
+  lengthConf = prompt( "Please type out the desired length of your password. Must between 8-128 characters.")
 }
 
 if (!lengthConf) {
@@ -35,17 +36,32 @@ lengthConf = prompt( "Please type out the desired length of your password. Must 
   alert("The password length must be between 8-128 characters long.")
 lengthConf = prompt( "Please type out the desired length of your password. Must between 8-128 characters.")
 
-}else {
-  alert("Your desired password will have " + lengthConfirm + " characters.")
+}else
+  alert("Your desired password will have " + lengthConf + " characters.")
+  numberConfirm =confirm("Click OK if you would like numbers in your password.")
+
+lowerCaseConf =confirm("Click OK if you would like lower case letters in your password.")
+
+upperCaseConf =confirm("Click OK if you would like upper case letters in your password.")
+
+specialCharConf =confirm ("Click OK if you would like special characters in your password.")
+
+
+
+
+if (numberConfirm === false && lowerCaseConf === false && upperCaseConf === false && specialCharConf === false){
+  alert("You must confirm at least one of the options.")
+numberConfirm =confirm("Click OK if you would like numbers in your password.")
+
+lowerCaseConf =confirm("Click OK if you would like lower case letters in your password.")
+
+upperCaseConf =confirm("Click OK if you would like upper case letters in your password.")
+
+specialCharConf =confirm ("Click OK if you would like special characters in your password.")
 }
 
-numberConfirm confirm("Click OK if you would like numbers in your password.")
 
-lowerCaseConf confirm("Click OK if you would like lower case letters in your password.")
 
-upperCaseConf confirm("Click OK if you would like upper case letters in your password.")
-
-specialCharConf confirm ("Click OK if you would like special characters in your password.")
 
 
 
