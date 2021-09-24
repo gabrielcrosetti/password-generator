@@ -12,6 +12,8 @@ Created a password generator with JavaScript using prompts, alerts, and confirms
 
 ## Site Picture
 
+<img width="1359" alt="password-generator-screenshot" src="https://user-images.githubusercontent.com/89226867/134627104-48ddb2a8-96bc-40f3-8e5e-e71a01c33671.png">
+
 
 ## Summary 
 
