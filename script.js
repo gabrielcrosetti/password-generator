@@ -84,6 +84,41 @@ else if (numberConfirm && lowerCaseConf && upperCaseConf) {
     choices = specCharacters.concat(alphabet, alphabet2);
 }
 
+else if (specialCharConf && numberConfirm) {
+  choices = specCharacters.concat(numbers);
+}
+
+else if (specialCharConf && lowerCaseConf) {
+  choices = specCharacters.concat(alphabet);
+
+}
+else if (specialCharConf && upperCaseConf) {
+  choices = specCharacters.concat(alphabet2);
+}
+else if (lowerCaseConf && numberConfirm) {
+  choices = alphabet.concat(numbers);
+}
+else if (lowerCaseConf && upperCaseConf) {
+  choices = alphabet.concat(alphabet2);
+}
+else if (numberConfirm && upperCaseConf) {
+  choices = numbers.concat(alphabet2)
+}
+else if (specialCharConf) {
+  choices = specCharacters;
+}
+else if (numberConfirm) {
+  choices = numbers;
+}
+else if (lowerCaseConf) {
+  choices = alphabet;
+}
+else if (upperCaseConf) {
+  choices = space.concat(alphabet2);
+};
+
+var password = []
+
 
 
 
