@@ -21,6 +21,8 @@ The password generator is activated by clicking on the "Generate Password" butto
 
 ## Deployed Link
 
+https://gabrielcrosetti.github.io/password-generator/
+
 ## Acknowledgements 
 
 * W3 Schools
